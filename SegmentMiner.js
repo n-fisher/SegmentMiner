@@ -54,7 +54,8 @@ function SegmentMiner(activityID, callback) {
    function processActivity(err, payload) {
       console.log('Processing ID ' + activityID);
       // Handle errors and assign the object's activity
-      if(err) {
+      console.log(payload);
+      if(err || payload.errors != undefined) {
          callback(err, payload);
          return;
       }
