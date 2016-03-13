@@ -37,3 +37,5 @@ errors|Object containing below information
 errors.resource|The API endpoint where the error occurred
 errors.field|The API endpoint field that has issues
 errors.code|API endpoint error code
+
+**In order to run, a `strava_config` json object file needs to be placed in a `data` folder in the root of the SegmentMiner directory.**
