@@ -54,7 +54,6 @@ function SegmentMiner(activityID, callback) {
    function processActivity(err, payload) {
       console.log('Processing ID ' + activityID);
       // Handle errors and assign the object's activity
-      console.log(payload);
       if(err || payload.errors != undefined) {
          callback(err, payload);
          return;
@@ -156,7 +155,7 @@ function SegmentMiner(activityID, callback) {
          // If no more pages forward to PP
          if (payload.length != 200) {
             console.log("Mined segment " + segmentID + ": " + personList.filter(function(p){return p.matchCount > 1}).length 
-                  + ' | ' + personList.filter(function(p){return p.matchCount/postCount > .9}).length + ' | ' + personList.filter(function(p){return p.matchCount == postCount}).length + ' | ' + personList.length);
+                  + ' | ' + personList.filter(function(p){return p.matchCount/postCount > .9}).length + ' | ' + personList.filter(function(p){return p.matchCount/postCount > .99}).length + ' | ' + personList.length);
             postProcess(false);
          }
          // Else explore the next page
