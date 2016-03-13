@@ -1,0 +1,26 @@
+{
+  "name": "SegmentMiner",
+  "main": "index.js",
+  "version": "1.0.0",
+  "description": "SegmentMiner is an API written in NodeJS that uses Strava's API to find related athletes.",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "mongoose": "^4.2.4",
+    "strava-v3": "^1.8.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nick0fisher/SegmentMiner.git"
+  },
+  "author": "Nick Fisher",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CPHMCollab/StravAwesome/issues"
+  },
+  "homepage": "https://github.com/CPHMCollab/StravAwesome"
+}
